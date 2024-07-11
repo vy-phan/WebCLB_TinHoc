@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../webCLB/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../webCLB/icon//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bocuc.css" />
+    <title>Phiếu đăng kí thành viên</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="layout-frame">
+        <div class="dangky">
+          <table>
+            <tr>
+              <th rowspan="3">
+                <img src="/Images/Logo.png" alt="" srcset="" />
+              </th>
+              <th><h2>TRƯỜNG CAO ĐẲNG CÔNG NGHỆ THÔNG TIN TP.HCM</h2></th>
+            </tr>
+            <tr>
+              <th class="gach1"></th>
+            </tr>
+            <tr>
+              <td><h2>INFORMATION TECHNOLOGY COLLEGE HCM CITY - ITC</h2></td>
+            </tr>
+          </table>
+        </div>
+        <div class="ttdk">
+          <h1>ĐĂNG KÝ THAM GIA CÂU LẠC BỘ TIN HỌC</h1>
+          <div class="duongke"></div>
+          <h3>THÔNG TIN ĐĂNG KÝ</h3>
+          <p>
+            <b>*Lưu ý:</b>
+            <i
+              >Sinh viên bắt buộc điền đầy đủ những mục có dấu
+              (<span>*</span>)</i
+            >
+          </p>
+
+          <div class="ttdk1">
+            <div>
+              <label for="hodem">Họ đệm <span>*</span></label> <br />
+              <input type="text" id="hodem" placeholder="Nhập họ đệm" class="input-ttdk"/>
+            </div>
+
+            <div>
+              <label for="ten">Tên <span>*</span></label> <br />
+              <input type="text" id="ten" placeholder="Nhập tên" class="input-ttdk"/>
+            </div>
+
+            <div>
+              <label for="gioitinh">Giới tính <span>*</span> </label> <br />
+              <select id="gioitinh" name="gioitinh" required>
+                <option value="" disabled selected>Chọn giới tính</option>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="birthdate">Ngày sinh <span>*</span> </label> <br />
+              <input type="date" id="birthdate" name="birthdate" class="input-ttdk" required />
+            </div>
+          </div>
+
+          <div class="ttdk2">
+            <div>
+              <label for="mssv">Mã số sinh viên <span>*</span></label> <br />
+              <input type="text" id="mssv" placeholder="Nhập mã số sinh viên" class="input-ttdk"/>
+            </div>
+            <div>
+              <label for="lop">Lớp <span>*</span></label> <br />
+              <input type="text" id="lop" placeholder="Nhập tên lớp" class="input-ttdk" />
+            </div>
+
+            <div>
+              <label for="phone">Điện thoại</label> <br />
+              <input type="text" id="phone" placeholder="Nhập số điện thoại" class="input-ttdk"/>
+            </div>
+            <div>
+              <label for="email">Email<span>*</span></label> <br />
+              <input type="text" id="email" placeholder="Nhập email" class="input-ttdk" />
+            </div>
+          </div>
+        </div>
+        <div class="duongke"></div>
+        <h3>THÔNG TIN KHẢO SÁT</h3>
+        <p>
+          Bạn biết câu lạc bộ ITE thông qua các kênh nào sau đây? ( Có thể click
+          chọn nhiều kênh) <span>*</span>
+        </p>
+        <div class="ttks">
+          <div class="ttks_CheckBox"><input type="checkbox" />Facebook</div>
+          <div class="ttks_CheckBox"><input type="checkbox" />Tiktok</div>
+          <div class="ttks_CheckBox">
+            <input type="checkbox" />Người giới thiệu
+          </div>
+          <div class="ttks_CheckBox">
+            <input type="checkbox" />Tin tức trên mạng
+          </div>
+        </div>
+        <div class="captcha">
+          <table>
+            <tr>
+              <td>
+                <label for="captcha-input">Nhận mã <span>*</span></label>
+              </td>
+              <td></td>
+              <td><label for="captcha-output">Nhập</label> <br /></td>
+            </tr>
+            <tr>
+              <td class="nhanma"><div class="preview"></div></td>
+              <td>
+                <div class="captcha-refresh">
+                  <i class="bx bx-refresh"></i>
+                </div>
+              </td>
+              <td>
+                <input type="text" id="captcha-form" placeholder="Nhập mã" />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="buttondk">
+          <a href="" id="login-btn"
+            ><i class="bx bxs-pencil"></i>&#160;&#160;ĐĂNG KÝ NGAY</a
+          >
+        </div>
+      </div>
+    </div>
+    <scripts srcs="./Giaodien/dkthamgia.js"></script>
+    <script src="./dangky.js"></script>
+  </body>
+</html>
+

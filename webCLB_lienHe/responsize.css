@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  .content {
+    margin: 20px;
+  }
+
+  .ttdk1,
+  .ttdk2 {
+    flex-direction: column;
+  }
+
+  input,
+  select {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+  h2,
+  h3,
+  h1 {
+    font-size: 1.2em;
+  }
+
+  table img {
+    width: 60px; /* Thay đổi kích thước của ảnh */
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .captcha .preview {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
