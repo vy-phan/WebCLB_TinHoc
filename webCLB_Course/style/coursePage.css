@@ -1,0 +1,449 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../img/dark.jpg");
+  
+}
+
+
+
+
+/* giao diện menu */
+
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  /* Adjust padding for better spacing on mobile */
+  display: flex;
+  justify-content: space-between;
+  /* Maintain even spacing */
+  align-items: center;
+  z-index: 99;
+  background: rgba(83, 133, 167, 0.707);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  /* Remove for horizontal layout on mobile */
+}
+
+.menu img {
+  width: 70px;
+}
+
+.menu a {
+  position: relative;
+  font-size: 1.3em;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.menu a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.menu #logo:hover::after {
+  transform-origin: center;
+  transform: scaleX(0);
+}
+
+/* nút bấm thanh menu khi ở dạng đt  */
+#menu-button {
+  cursor: pointer;
+  display: none;
+  text-align: right;
+}
+
+#menu-button:hover {
+  color: white;
+}
+
+
+.search-bar {
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 14px;
+  display: flex;
+  align-items: left;
+  margin-right: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #030303;
+  padding-left: 10px;
+}
+
+.search-bar input::placeholder {
+  color: #000000;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 22px;
+  color: #000000;
+}
+
+.search-bar button:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* giao diện chính hiện nội dung */
+
+#right_Side {
+  flex: 100%;
+  padding: 20px;
+  /* ảnh nền bên phải */
+  background-color: rgb(255, 255, 255);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: nonwrap;
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+
+/*nội dung menumdfkdnfd*/
+
+#menuTittle > nav {
+  justify-content: space-between;
+  background-color: #D8D8D8;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+/*  padding: 10px 20px;*/
+  /* Adjust padding for better spacing on mobile */
+  display: flex;
+  justify-content: space-between;
+  /* Maintain even spacing */
+  align-items: center;
+/*  z-index: 99;
+  background: rgba(83, 133, 167, 0.707);
+  backdrop-filter: blur(5px);*/
+  text-align: center;
+}
+
+#menuTittle > nav > a{
+  text-align: center;
+  position: relative;
+  font-size: 1.3em;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 40px;
+  margin-right: 40px;  
+  margin-top: 10px;
+  cursor: pointer;
+/*   flex: 5%;*/
+/*  text-decoration: none;
+  */
+}
+
+#menuTittle > nav > a:hover{
+  border-bottom: solid 1px black;
+  padding: 6px;
+  background-color: white;
+}
+
+
+
+/*nội dung khóa học*/
+#containerCourse{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.itemCourse{
+  flex: 20%;
+  text-align: center;
+}
+
+.imgCourse {
+  width: 90%;
+
+}
+
+.textCourse{
+  font-size: large;
+  font-weight: 600;
+  padding: 5px;
+
+}
+
+.authorCourse{
+  padding: 10px;
+}
+
+
+
+#endCourse > a{
+  color: black;
+  text-decoration: none;
+  font-size: large;
+}
+
+#endCourse > a:hover{
+  color: greenyellow;
+}
+
+/* cuối trang  */
+footer{
+  display: flex;
+  flex-wrap: nonwrap;
+  color: white;
+  background: rgb(83, 123, 200);
+  background: linear-gradient(90deg, rgba(83, 123, 200, 1) 25%, rgba(119, 183, 198, 1) 83%, rgba(195, 251, 255, 1) 100%);
+
+}
+
+footer>#leftFooter {
+  flex: 33%;
+  font-size: large;
+  padding: 30px;
+
+}
+
+footer>#centerFooter{
+  flex: 33%;
+  padding: 30px;
+  font-size: large;
+}
+
+footer>#rightFooter {
+  flex: 33%;
+  font-size: large;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+#centerFooter > a{
+  color: white;
+  text-decoration: none;
+}
+
+#centerFooter>a:hover{
+  color: black;
+}
+
+
+@media screen and (max-width: 1220px) {
+  #container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+
+/* Responsive Menu Items (Mobile) */
+@media screen and (max-width: 768px) {
+
+/* menu và logg */
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .menu a,
+  .search-bar {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 2.0em;
+    text-indent: -80px;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+/*bố cục menu các khóa học*/
+#menuTittle > nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menuTittle > nav > a{
+  flex: 5%;
+}
+
+
+/*bố cục các item khóa học*/
+
+/*#containerCourse{
+  flex-wrap: wrap;
+
+}*/
+
+.itemCourse{
+  flex: 50%;
+  width: 20%;
+}
+
+/*.imgCourse{
+  width: 20%;
+}*/
+.authorCourse{
+  text-align: right;
+}
+
+
+
+
+
+
+
+/*cuối trang*/
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer>#leftFooter {
+    flex: 50%;
+
+  }
+  
+  footer>#centerFooter{
+    flex: 50%;
+
+  }
+
+  footer>#rightFooter{
+    flex: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 903px){
+  #menuTittle > nav > a{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  #right_Side{
+    margin-left: 20px;
+  }
+
+  .itemCourse{
+    flex: 50%;
+    width: 100%;
+  }
+  #menuTittle > nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#menuTittle > nav > a{
+  flex: 5%;
+  margin: 0px;
+  font-size: small;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+}
+
+@media screen and (max-width: 450px){
+  #right_Side{
+    margin-left: 25px;
+    width: 80%;
+  }
+
+  .itemCourse{
+    flex: 100%;
+    width: 100%;
+  }
+  .authorCourse{
+    margin-right: 40px;
+  }
+
+  #menuTittle > nav {
+    margin-right: 15px;
+  }
+  #menuTittle > nav > a{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+#scrollToTopBtn {
+    margin-right: 50px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid 1px black; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: #ee2c74;
+/*    background-color: #333; /* Set a background color */*/
+/*    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
