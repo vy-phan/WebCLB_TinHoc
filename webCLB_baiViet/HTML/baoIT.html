@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Câu lạc bộ tin học</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon//favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon//favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/news.css" />
+</head>
+
+<body>
+    <!-- chỗ này nữa nè đổi tên miền . Nên lên plugin fb đổi đi cái mới cho lẹ  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
+        nonce="SOrstxuK"></script>
+    <!-- tới đây thoi nha -->
+
+    <div class="menu">
+        <div id="menu_container">
+            <nav>
+                <a id="logo" href="" target="_self">
+                    <img src="../Images/logo_itc.png" id="ITE_CLB" height="70px" width="70px" />
+                </a>
+            </nav>
+            <div id="menu-button">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- THÀNH CHỈNH PHẦN NÀY -->
+            <!-- Script đóng mở menu -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                let isMenuOpen = false;
+                $("#menu-button").click(function () {
+                    if (!isMenuOpen) {
+                        $(".menuBtn").slideDown();
+                        isMenuOpen = true;
+                    } else {
+                        $(".menuBtn").slideUp();
+                        isMenuOpen = false;
+                    }
+                });
+            </script>
+        </div>
+        <a class="menuBtn" href="../../webCLB/homePage.html" target="_self">Trang chủ</a>
+        <a class="menuBtn" href="./baiViet.html">Bài viết</a>
+        <a class="menuBtn" href="../../webCLB_Course/coursePage.html">Khóa học</a>
+        <a class="menuBtn" href="../../webCLb_test/HTML/DungeonCode.html" target="_blank">Test</a>
+        <a class="menuBtn" href="../../webCLB_lienHe/Giaodien/contact.html">Liên hệ</a>
+        <a class="menuBtn" href="../../webCLB_AboutMe/AboutUs.html">About Us</a>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <script>
+            $(document).ready(function () {
+                $("#menu-button").click(function () {
+                    $(".menuBtn").slideToggle();
+                });
+            });
+        </script>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <!-- Tiêu đề -->
+            <h2 style="text-align: center">
+                Bài viết nổi bật
+                <div style="
+              width: 165px;
+              height: 1px;
+              background: rgb(0, 152, 209);
+              margin: auto auto 8px;
+            "></div>
+            </h2>
+
+            <div class="contenImpresvise">
+                <a href="../HTML/bao.html">
+                    <img src="../Images/bao1.jpg" width="112px" height="70px" />
+                    <p>𝐓𝐡𝐨̂𝐧𝐠 𝐛𝐚́𝐨 “𝐊𝐢𝐜𝐤 𝐎𝐟𝐟” 𝐜𝐮𝐨̣̂𝐜 𝐭𝐡𝐢 𝐖𝐞𝐛 𝐃𝐞𝐬𝐢𝐠𝐧 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞
+                    </p>
+                </a>
+                <hr />
+            </div>
+
+            <!-- Bài viết 2 -->
+            <h2 style="text-align: center">
+                Bài viết khác
+                <div style="
+              width: 165px;
+              height: 1px;
+              background: rgb(0, 152, 209);
+              margin: auto auto 8px;
+            "></div>
+            </h2>
+
+            <!-- bài báo 1  -->
+            <div class="contenImpresvise">
+                <a href="../HTML/bao.html">
+                    <img src="../Images/bao1.jpg" width="112px" height="70px" />
+                    <p>
+                        𝑾𝒆𝒃 𝑫𝒆𝒔𝒊𝒈𝒏 𝑪𝒉𝒂𝒍𝒍𝒆𝒏𝒈𝒆 - 𝑲𝒉𝒐̛𝒊 𝒅𝒂̣̂𝒚 𝒏𝒊𝒆̂̀𝒎 đ𝒂𝒎 𝒎𝒆̂ 𝒔𝒂́𝒏𝒈
+                        𝒕𝒂̣𝒐 𝒄𝒖̀𝒏𝒈 𝒈𝒊𝒂̉𝒊
+                        𝒕𝒉𝒖̛𝒐̛̉𝒏𝒈 𝒔𝒊𝒆̂𝒖 𝒉𝒂̂́𝒑 𝒅𝒂̂̃𝒏!💻🖥️
+                    </p>
+                </a>
+                <hr />
+            </div>
+
+            <!-- bài báo 2  -->
+            <div class="contenImpresvise">
+                <a href="../HTML/bao.html">
+                    <img src="../Images/SinhHoat2.jpg" width="112px" height="70px" />
+                    <p>
+                        Hôm nay buổi sinh hoạt T7, 25, Th5 có sự tham gia đầy đủ của các
+                        bạn thành viên trong CLB🌱
+                    </p>
+                </a>
+                <hr />
+            </div>
+
+            <!-- bài báo 3 -->
+            <div class="contenImpresvise">
+                <a href="../HTML/bao.html">
+                    <img src="../Images/SinhHoat3.jpg" width="112px" height="70px" />
+                    <p>
+                        Buổi sinh hoạt và ôn tập ngày8/6 với sự tham nhiệt tình và đầy của
+                        các bạn thành viên câu lạc bộ🌱
+                    </p>
+                </a>
+                <hr />
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <br />
+            <!-- Bài viết chính -->
+
+            <div class="contentMain">
+                <h1>NGÀNH CÔNG NGHỆ THÔNG TIN GỒM NHỮNG CHUYÊN NGÀNH NÀO ?</h1>
+                <p><i class="far fa-clock"></i> TP.HCM, Sep 3, 2023</p>
+
+                <!--  Tiêu đề  -->
+                <p>
+                    <b>
+                        Công nghệ thông tin là ngành học được ưa chuộng và cũng đang
+                        “khát” nhân lực.</b>
+                    <br />
+                    <br />
+                    <img src="../Images/baoIT/cntt.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Công nghệ thông tin là ngành học, là định hướng nghề
+                        nghiệp được
+                        ưa chuộng.</i>
+                    <br />
+                    <br />
+                </p>
+
+                <!-- Khái niệm -->
+                <p><b> Ngành Công nghệ thông tin là gì? </b></p>
+                <span>Bạn quan tâm đến <b>ngành công nghệ thông tin</b>? Bạn hứng thú với
+                    công việc công nghệ thông tin? Vậy công nghệ thông tin là gì? <br /></span>
+                <br />
+                <span><a href="https://en.wikipedia.org/wiki/Information_technology" target="_blank" style="
+                color: #02258d;
+                font-weight: bold;
+                text-decoration: underline;
+              ">Công nghệ thông tin</a>
+                    tiếng anh là Information Technology (viết tắt là IT) là ngành khoa
+                    học kỹ thuật sử dụng máy tính và các phần mềm máy tính, mạng lưới
+                    internet để lưu trữ, bảo vệ xử lý, trao đổi, thu thập và sử dụng
+                    thông tin.<b> Ngành CNTT</b> sử dụng kỹ thuật máy tính và viễn thông
+                    để khai thác các nguồn tài nguyên thông tin giúp vận hành các hệ
+                    thống, dây chuyền sản xuất, kết nối với khách hàng trong các quá
+                    trình kinh doanh,…
+                </span>
+                <br />
+                <img src="../Images/baoIT/cntt-1.jpg" class="responsive-image" />
+                <i style="font-size: small; text-align: center">Công nghệ thông tin (IT) sử dụng kỹ thuật máy tính và
+                    viễn thông
+                </i>
+                <br />
+                <span>
+                    Bởi những ứng dụng vô cùng thiết thực với đời sống,<b>
+                        nghề công nghệ thông tin
+                    </b>
+                    hiện cần số lượng lớn nguồn nhân lực. Tuy nhiên công nghệ thông tin
+                    là ngành rộng, có rất nhiều chuyên ngành. Để giải đáp thông tin cho
+                    các em học sinh, sinh viên hay những người quan tâm đến công việc
+                    trong <b> ngành công nghệ thông tin</b> , dưới đây là những thông
+                    tin chi tiết trả lời cho câu hỏi công nghệ thông tin gồm những
+                    chuyên ngành nào.
+                </span>
+                <!-- Tốc độ tăng trưởng -->
+                <p>
+                    <b>Công nghệ thông tin gồm những chuyên ngành nào?</b><br /><br />
+                    <img src="../Images/baoIT/cntt-2.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Công nghệ thông tin gồm những chuyên ngành nào?
+                    </i>
+                    <br />
+                    <span><b>
+                            <br />Ngành CNTT gồm có rất nhiều chuyên ngành, nhưng phổ biến
+                            nhất tại Việt Nam có 7 chuyên ngành dưới đây.<br /></b></span>
+                </p>
+                <!-- 1. Khoa học máy tính -->
+                <p>
+                    <b>1. Khoa học máy tính </b><br /><br />
+                    <span> <b>Ngành CNTT</b> Khoa học máy tính có tên tiếng anh là Computer Science, đây là chuyên ngành
+                        công nghệ thông tin chú trọng đào tạo các lý thuyết về thông tin và tính toán. Áp dụng các ứng
+                        dụng của tính toán vào hệ thống máy tính để lý giải các chương trình máy tính.</span> <br><br>
+                    <img src="../Images/baoIT/cntt-3.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Khoa học máy tính là ứng dụng các thuật toán vào các
+                        chương trình máy tính
+                    </i> <br> <br>
+                    <span>Học chuyên ngành khoa học máy tính, bạn sẽ có cơ hội công việc vô cùng rộng mở ở các vị trí
+                        như:</span>
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Lập trình viên thực hiện trên các nền tảng website/app</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Chuyên viên phân tích và thiết kế các sản phẩm thuộc công nghệ
+                        thông tin</li>
+                    <li style="margin-bottom: 0.5em;">Xây dựng và phát triển các ứng dụng tin học</li>
+                    <li style="margin-bottom: 0.5em;">Giảng dạy và nghiên cứu chuyên sâu về công nghệ thông tin,…</li>
+                </ul>
+                </p>
+
+                <!-- 2. Mạng máy tính và truyện dữ liệu -->
+                <p>
+                    <b>2. Mạng máy tính và truyền thông dữ liệu </b><br /><br />
+                    <img src="../Images/baoIT/cntt-4.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Phát triển mạng máy tính và truyền thông dữ liệu
+                    </i> <br> <br>
+                    <span>Với xu thế lấy mạng internet làm nền tảng kết nối mọi thứ, mạng máy tính và truyền thống dữ
+                        liệu là chuyên ngành công nghệ thông tin đang phát triển mạnh. Với chuyên ngành này, người học
+                        nghiên cứu cách thiết kế, các nguyên lý xây dựng mạng internet.</span><br><br>
+                    Vị trí công việc của chuyên ngành này như:
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Nhân viên kỹ thuật lắp đặt phần cứng của mạng</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Chuyên viên phát triển phần mềm và các ứng dụng của mạng internet
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Chuyên viên thiết kế mạng, phát triển quản trị mạng cho các tổ
+                        chức, đơn vị theo yêu cầu,…</li>
+                </ul>
+                </p>
+
+                <!-- 3. Công nghệ phần mềm -->
+                <p>
+                    <b>3. Công nghệ phần mềm </b><br /><br />
+                    <span>Khi trả lời cho câu hỏi công nghệ thông tin gồm những chuyên ngành nào, thì
+                        hẳn không thể không nhắc đến công nghệ phần mềm. Với tên tiếng Anh là Software Engineering, đây
+                        là công việc thực hiện các lập trình phần mềm để phát triển hay bảo trì phát triển các phần mềm
+                        cho chương trình, ứng dụng.</span> <br><br>
+                    <img src="../Images/baoIT/cntt-cnpm.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Kỹ sư phần mềm máy tính đảm nhiệm việc lập trình,
+                        thiết kế các website, các app, game
+                    </i> <br> <br>
+                    <span>Học chuyên ngành công nghệ phần mềm và trở thành các kỹ sư phần mềm, bạn có thể đảm nhiệm các
+                        vị trí công việc vô cùng hấp dẫn như:</span>
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Lập trình viên thiết kế website/các ứng dụng (app)/game</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Trở thành nhân viên công nghệ thông tin phát triển sản phẩm ở các
+                        công ty công nghệ, kỹ thuật</li>
+                    <li style="margin-bottom: 0.5em;">Thực hiện sáng tạo các phần mềm của riêng mình;…c</li>
+                </ul>
+                </p>
+
+                <!-- 4. Kỹ thuật máy tính -->
+                <p>
+                    <b>4. Kỹ thuật máy tính </b><br /><br />
+                    <img src="../Images/baoIT/cntt-5.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Kỹ thuật máy tính có chức năng thiết kế các mạch
+                        điện tử cho các hệ thống, phần mềm
+                    </i> <br> <br>
+                    <span>Chuyên ngành kỹ thuật máy tính thu hút những người yêu thích, đam mê việc phát triển hệ thống
+                        phần cứng và phần mềm máy tính. Kỹ thuật máy tính là sự kết hợp của công nghệ thông tin với điện
+                        tử, với chức năng cơ bản là thiết kế các mạch điện tử cho các hệ thống, các đồ điện
+                        tử,…</span><br><br>
+                    Lựa chọn kỹ thuật máy tính, bạn sẽ có cơ hội việc làm hấp dẫn như trở thành:
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Kỹ sư điện tử – mạch điện</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Nhân viên công nghệ thông tin chịu trách nhiệm quản lý, tổ chức
+                        phần mềm
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Lập trình các con chip điện tử cho các đồ dùng gia dụng, thiết bị
+                        điện tử, di động, điều khiển phương tiện ô tô,…</li>
+                </ul>
+                </p>
+
+                <!-- 5. Kỹ thuật mạng -->
+                <p>
+                    <b>5. Kỹ thuật mạng </b><br /><br />
+                    <img src="../Images/baoIT/cntt-6.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Kỹ thuật mạng internet cần nguồn nhân lực cao
+                    </i> <br> <br>
+                    <span>Sự phát triển của hệ thống mạng internet là bước tiến đột phá của công nghệ hiện đại. Điều này
+                        thúc đẩy sự phát triển của các công việc chuyên ngành kỹ thuật mạng như thiết kế mạng, dịch vụ
+                        mạng internet, an ninh mạng, quản trị mạng.</span><br><br>
+                    Công việc của nhân viên kỹ thuật mạng thường là:
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Kết nối đường truyền</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Đảm bảo cơ sở dữ liệu, hệ thống lưu trữ thông tin
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Bảo vệ an toàn, an ninh mạng,…</li>
+                </ul>
+                </p>
+
+                <!-- 6. Hệ thống quản lý thông tin -->
+                <p>
+                    <b>6. Hệ thống quản lý thông tin </b><br /><br />
+                    <img src="../Images/baoIT/cntt-htqltt.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Hệ thống quản lý thông tin áp dụng công nghệ thông
+                        tin vào ứng dụng kinh doanh, quản lý sản xuất
+                    </i> <br> <br>
+                    <span>Nhiều người khi nhắc đến công nghệ thông tin gồm những chuyên ngành nào thường bỏ sót hệ thống
+                        quản lý thông tin (MIS). Không thuộc nhóm quản trị kinh doanh, hệ thống quản lý thông tin là
+                        chuyên ngành công nghệ thông tin đặc thù được áp dụng trực tiếp vào quá trình kinh doanh, gắn
+                        liền với các ngành kinh tế. MIS là công việc tổng hợp các dữ liệu thông tin theo nhu cầu của con
+                        người, của doanh nghiệp như quá trình vận hành, sản xuất kinh doanh.</span><br><br>
+                    Học chuyên sâu về hệ thống quản lý thông tin, bạn sẽ làm tại các vị trí công việc như:
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Lập trình viên cơ sở dữ liệu</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Quản lý hệ thống cơ sở dữ liệu của các doanh nghiệp, công ty, tổ
+                        chức
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Đào tạo và kiểm định nghiệp vụ</li>
+                </ul>
+                </p>
+
+                <!-- 7. Robot và Trí tuệ nhân tạo -->
+                <p>
+                    <b>7. Robot và Trí tuệ nhân tạo
+                    </b><br /><br />
+                    <img src="../Images/baoIT/cntt-7.jpg" class="responsive-image" />
+                    <i style="font-size: small; text-align: center">Trí tuệ nhân tạo AI là ngành khoa học hiện đại, cần
+                        thiết với các vị trí làm việc hấp dẫn
+                    </i> <br> <br>
+                    <span>Trí tuệ nhân tạo hay AI lĩnh vực khoa học máy tính cung cấp kiến thức giúp con người lập trình
+                        cho máy tính có các hành vi thông minh như con người. </span><br><br>
+                    Kỹ sư trí tuệ nhân tạo làm các công việc như:
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Huấn luyện máy tính thực hiện các nhiệm vụ dựa trên các dữ liệu và thuật toán</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Thu thập, phân tích và giải thích các bộ dữ liệu lớn, phức tạp
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Đưa ra xu hướng kinh doanh và thị trường,…</li>
+                </ul>
+                <span>Là một ngành mới, có nguồn nhân lực khan hiếm, trí tuệ nhân tạo là chuyên ngành công nghệ thông
+                    tin hấp dẫn với mức lương cao nhất trong ngành. Các vị trí làm việc của ngành AI gồm:</span>
+                <ul type="disc">
+                    <li style="margin-bottom: 0.5em;">
+                        Kỹ sư/chuyên viên phát triển ứng dụng AI vào phần mềm</li>
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Phát triển hệ thống tự động hóa và robot
+                    </li>
+                    <li style="margin-bottom: 0.5em;">Kiến trúc sư mảng dữ liệu,…</li>
+                </ul>
+                </p>
+
+                <!-- Kết bài -->
+                <p> <b> Ngành công nghệ thông tin</b> là ngành học đa dạng, có kiến thức liên tục đổi mới cần sự cập
+                    nhật, vì vậy kiến thức được học tại trường chỉ là nền tảng giúp bạn tiếp cận với công việc. Để làm
+                    việc trong <b>nghề công nghệ thông tin</b>, khả năng tự học và thực hành rèn luyện kỹ năng là cần
+                    thiết để có những bước tiến vững chắc và gia tăng thu nhập.</p>
+
+            </div>
+            <br />
+
+            <!-- chỗ này cần đổi lại tên miền của website nè -->
+            <div class="fb-comments" data-href="file:///D:/subliMent/webCLBTinHoc/webCLB_baiViet/HTML/baoAI.html"
+                    data-width="200" data-numposts="10">            
+            </div>
+            <br>
+            
+            <!-- BÀI VIẾT KHÁC -->
+            <!-- Có thể bạn ko quan tâm -->
+            <h2 style="text-align: center;">Có thể bạn quan tâm
+                <div style="width: 250px;height: 1px;background: rgb(0, 152, 209);margin: auto auto 8px;">
+                </div>
+            </h2>
+
+            <div class="newsOthers">
+            <!-- 1 -->
+            <div class="itemNewsOthers">
+              <img src="../Images/baoCaoTT/Bao-Cao-Thi-Truong-IT.png" />
+              <div class="textNewsOthers">
+                <p><b>
+                  <a href="../HTML/baoCaoTT.html">BÁO CÁO THỊ TRƯỜNG IT VIỆT NAM 2023
+                  </a>
+                </p></b> 
+              </div>
+            </div>
+
+
+            <!-- 2 -->
+            <div class="itemNewsOthers">
+              <img src="../Images/baoAI/phanBietAI.png"  />
+              <div class="textNewsOthers">
+                <p><b>
+                  <a href="../HTML/baoAI.html">AI VÀ MACHINE LEARNING (MÁY HỌC) TRONG LẬP TRÌNH</a>
+                </p></b> 
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="itemNewsOthers">
+              <img src="../Images/baoIT/cntt.jpg" />
+              <div class="textNewsOthers">
+                <p><b>
+                  <a href="../HTML/baoIT.html">NGÀNH CÔNG NGHỆ THÔNG TIN GỒM NHỮNG CHUYÊN NGÀNH NÀO ?</a>
+                </p></b> 
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div id="leftFooter">
+            <h1>Liên Hệ</h1>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Địa điểm: Tầng Trệt A Trường cao đẳng Công Nghệ Thông Tin (phía sau
+                Phòng Tin Học và Ngoại Ngữ)
+            </p>
+            <p><i class="fa-solid fa-tags"></i>Theo dõi chúng tôi tại:</p>
+            <a href="https://www.facebook.com/profile.php?id=61559944978578" target="_blank"><i
+                    class="fa-brands fa-facebook" style="color: #02258d"></i></a>
+            <p>&#169; Copyright CLB Tin học ITE All Reserved.</p>
+        </div>
+        <div id="centerFooter">
+            <h1>Liên kết nhanh</h1>
+            <!-- cần gắn link khi có link đăg kí -->
+            <i class="fa-solid fa-pen"></i>
+            <a href="" target="_blank">Đăng kí thành viên</a> <br />
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="https://itc.edu.vn/" target="_blank">Trang chủ chính thức trường CĐ CNTT</a>
+        </div>
+        <div id="rightFooter">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449.2714854342751!2d106.63432329819565!3d10.77510407039651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea144839ef1%3A0x798819bdcd0522b0!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIEPDtG5nIE5naOG7hyBUaMO0bmcgVGluIFRwLkjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1717337174909!5m2!1svi!2s"
+                width="90%" height="80%" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <!-- Phím cuộn -->
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fa fa-angle-up"></i>
+    </button>
+
+    <script>
+        let mybutton = document.getElementById("scrollToTopBtn");
+        window.onscroll = function () {
+            scrollFunction();
+        };
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        };
+    </script>
+</body>
+
+</html>

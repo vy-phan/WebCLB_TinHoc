@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon//favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./style/coursePage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <title>Câu lạc bộ Tin Học</title>
+</head>
+
+<body>
+  <div class="menu">
+    <div id="menu_container">
+      <nav>
+        <a id="logo" href="" target="_self">
+          <img src="./img/logo_itc.png" id="ITE_CLB" height="70px" width="70px" />
+        </a>
+      </nav>
+      <div id="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <a class="menuBtn" href="../webCLB/homePage.html" target="_self">Trang chủ</a>
+    <a class="menuBtn" href="../webCLB_baiViet/HTML/baiViet.html">Bài viết</a>
+    <a class="menuBtn" href="coursePage.html" target="_self">Khóa học</a>
+    <a class="menuBtn" href="../webCLb_test/HTML/DungeonCode.html" target="_blank">Test</a>
+    <a class="menuBtn" href="../webCLB_lienHe/Giaodien/contact.html">Liên hệ</a>
+    <a class="menuBtn" href="../webCLB_AboutMe/AboutUs.html">About Us</a>
+    <form action="#" class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <script>
+      $(document).ready(function () {
+        $('#menu-button').click(function () {
+          $('.menuBtn').slideToggle();
+        })
+      })
+    </script>
+  </div>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
+    nonce="15Q9rdbe"></script>
+
+  <div id="container">
+    <div id="right_Side">
+      <div id="menuTittle">
+        <nav>
+            <a href="#" >Kiến thức cơ bản</a>
+            <a href="#" >Java</a>
+            <a href="#" >Python</a>
+            <a href="#" >JavaScrip</a>
+            <a href="#" >C#</a>
+            <a href="#" >Cơ sở dữ liệu</a>
+            <a href="#" >Thiết kế Web</a>
+        </nav>
+      </div>
+      <hr>
+
+
+      <div id="containerCourse">
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLyxSzL3F748401hWFgJ8gKMnN6MM8QQ7F&si=iTfGZPMlahJnf4aY" target="_blank"><img src="./img/java.png" width="200" ></a></div>
+            <div class="textCourse">Lập trình Java cơ bản <br> (phù hợp người mới)</div>
+            <div class="authorCourse">TITV</div>
+
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLPt6-BtUI22rxpe6PZc5H6XAgPusA6fDQ&si=ljsyLXhJkTKEMeeU" target="_blank"><img src="./img/javaGa.png" width="200"></a></div>
+            <div class="textCourse">Lập trình java siêu tốc</div>
+            <div class="authorCourse">Gà lại lập trình</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PL33lvabfss1wUj15ea6W0A-TtDOrWWSRK&si=k0iPelIx-gKkUmPv" target="_blank"><img src="./img/Chash.png" width="200"></a></div>
+            <div class="textCourse">Lập trình C#</div>
+            <div class="authorCourse">Kteam</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PL33lvabfss1y5jmklzilr2W2LZiltk6bU&si=C5JCoNOD-eBK1KHx" target="_blank"><img src="./img/ChashAdvance.png" width="200"></a></div>
+            <div class="textCourse">Lập trình C# nâng cao</div>
+            <div class="authorCourse">Kteam</div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PL33lvabfss1xnFpWQF6YH11kMTS1HmLsw&si=xRqoqv1d4mJn0c_w" target="_blank"><img src="./img/sqlKteam.png" width="200"></a></div>
+            <div class="textCourse">Sql Sever</div>
+            <div class="authorCourse">Kteam</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PL33lvabfss1zWPw98QxWabISUSUkIqpEd&si=WMmTQlfpaOdn6rS_" target="_blank"><img src="./img/sqlSever.png" width="200"></a></div>
+            <div class="textCourse">Chi tiết giải thích về SQL <br> và thực hành</div>
+            <div class="authorCourse">Kteam</div>
+          </div> 
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLyxSzL3F7484deka_j1czssCiHygV6oF-&si=i1AkD2bNn_6AOl4d" target="_blank"><img src="./img/sqlTITV.png" width="200"></a></div>
+            <div class="textCourse">Sql sever</div>
+            <div class="authorCourse">TITV</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLyxSzL3F7487f2BrlHKg87WlUEennWOKu&si=EPxqhNs5ZMIdO1qy" target="_blank"><img src="./img/mySQL.png" width="200"></a></div>
+            <div class="textCourse">My SQL</div>
+            <div class="authorCourse">TITV</div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLyxSzL3F7484gAqOtnw7v1lU7fpDDfyt_&si=kWDhJMilpSxweXOr" target="_blank"><img src="./img/javaSQL.png" width="200"></a></div>
+            <div class="textCourse">Java kết nối SQL</div>
+            <div class="authorCourse">TITV</div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLEzgItGwNvPvz80JbfXcuaWyHQMAU2t9n&si=IFh00jr4EYbxHcDY" target="_blank"><img src="./img/csdl.png" width="200"></a></div>
+            <div class="textCourse">Tối ưu và hiểu rõ bản chất <br>, tư duy SQL</div>
+            <div class="authorCourse">Trần Quốc Huy - DataBase</div>
+          </div>         
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtu.be/lfmg-EJ8gm4?si=WaTzgt1AQx745i3C" target="_blank"><img src="./img/jsENG.png" width="200"></a></div>
+            <div class="textCourse">Learning JavaScrip with 12Hour</div>
+            <div class="authorCourse">Bro Code</div>
+          </div>      
+
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLPt6-BtUI22pYwpfmkP4EuJkf6GRe63KU&si=TK4H65VTwd7Eof-f" target="_blank"><img src="./img/js.png" width="200"></a></div>
+            <div class="textCourse">JavaScrip (có kèm bài tập)</div>
+            <div class="authorCourse">Gà lại lập trình </div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLPt6-BtUI22oveeGAyckbAXRSmTBGLZP4&si=x-f_nClxDrLwW7Ai" target="_blank"><img src="./img/tkweb.png" width="200"></a></div>
+            <div class="textCourse">HTML & CSS (chi tiết)</div>
+            <div class="authorCourse">Gà lại lập trình </div>
+          </div> 
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLodO7Gi1F7R0zA8RkRHcDgnPduNBmjkb5&si=8XD_Vqn8AyVUJl4f" target="_blank"><img src="./img/project.png" width="200"></a></div>
+            <div class="textCourse">Các Project nhỏ </div>
+            <div class="authorCourse">Nodemy</div>
+          </div>    
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLoaAbmGPgTSNMAzkKBHkh2mLuBk54II5L&si=bueMeg6DgIRVled2" target="_blank"><img src="./img/gt.png" width="200"></a></div>
+            <div class="textCourse">Cấu trúc dữ liệu và giải thuật <br>(bản chất & tư duy)</div>
+            <div class="authorCourse">Ông Dev</div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLqLksqdSk4b2ely12ZuwQcujGOYAUlPKz&si=ty9hGMR_5VcWSGqY" target="_blank"><img src="./img/ctdl.png" width="200"></a></div>
+            <div class="textCourse">Cấu trúc dữ liệu và giải thuật <br> (Java và C++)</div>
+            <div class="authorCourse">The Brown Box</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtu.be/beuKZ9PW_rI?si=TLNTd7AfBIBVVdCM" target="_blank"><img src="./img/git.png" width="200"></a></div>
+            <div class="textCourse">Học Git và Github</div>
+            <div class="authorCourse">TITV</div>
+          </div> 
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLncHg6Kn2JT4kLKJ_7uy0x4AdNrCHbe0n&si=J-DdaqE_hEfk99oE" target="_blank"><img src="./img/docker.png" width="200"></a></div>
+            <div class="textCourse">Tự học Docker</div>
+            <div class="authorCourse">Hỏi Dân IT</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLyxSzL3F74878husgCe4IF6iJNSCjYTGq&si=OZaFIiDoAajEwpIl" target="_blank"><img src="./img/linux.png" width="200"></a></div>
+            <div class="textCourse">Hệ điều hành Linux</div>
+            <div class="authorCourse">TITV</div>
+          </div> 
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLJcWUrckOCKK7tXpLTJJsl1MD98bQHHOg&si=xWlXswFINCKDg1Gw" target="_blank"><img src="./img/py.png" width="200"></a></div>
+            <div class="textCourse">Lập trình python cơ bản</div>
+            <div class="authorCourse">CodeXplore</div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLJcWUrckOCKKwjjHALg6fnyQCHv8z92rs&si=7w9x0eHm_jW_ejWG" target="_blank"><img src="./img/data.png" width="200"></a></div>
+            <div class="textCourse">DataScience</div>
+            <div class="authorCourse">CodeXplore</div>
+          </div>   
+
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PLyxSzL3F7486SaHaQayPdKJUScVFh1UwA&si=Cibnl-QBSyb03zAt" target="_blank"><img src="./img/python.png" width="200"></a></div>
+            <div class="textCourse">Python cơ bản và <br> hướng đối tượng</div>
+            <div class="authorCourse">TITV</div>
+          </div>  
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtube.com/playlist?list=PL33lvabfss1zLDVHXW_YUJxhxBFap-vm_&si=rjnjtyJ3O-cgJ26h" target="_blank"><img src="./img/machine.png" width="200"></a></div>
+            <div class="textCourse">Lập trình Machine learning <br> cơ bản với Python</div>
+            <div class="authorCourse">Kteam</div>
+          </div>  
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="https://youtu.be/xxpc-HPKN28?si=gwkNCzd2EKp2XF2j" target="_blank"><img src="./img/statics.png" width="200"></a></div>
+            <div class="textCourse">Statics <br>(Xác suất thống kê)</div>
+            <div class="authorCourse">freeCodeCamp.org</div>
+          </div>
+
+          <div class="itemCourse">
+            <div class="imgCourse"><a href="" target="_blank"><img src="" width="200"></a></div>
+            <!-- ./img/.png -->
+            <div class="textCourse"></div>
+            <div class="authorCourse"></div>
+          </div>  
+
+
+<!--           <div class="itemCourse">
+            <div class="imgCourse"><a href="" target="_blank"><img src="./img/.png" width="200"></a></div>
+            <div class="textCourse"></div>
+            <div class="authorCourse"></div>
+          </div>  --> 
+
+      </div>
+
+      <div id="endCourse">
+          <a href="#" >Còn tiếp ...</a>  
+      </div>
+
+
+      <style>
+        hr {
+          width: 100%;
+          border-top: 3px solid black;
+        }
+      </style>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div id="leftFooter">
+      <h1>Liên Hệ</h1>
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Địa điểm: Tầng Trệt A Trường cao đẳng Công Nghệ Thông Tin (phía sau Phòng Tin Học và Ngoại Ngữ)
+      </p>
+      <p><i class="fa-solid fa-tags"></i>Theo dõi chúng tôi tại:</p>
+      <a href="https://www.facebook.com/profile.php?id=61559944978578" target="_blank"><i class="fa-brands fa-facebook"
+          style="color: #02258d;"></i></a>
+      <p>&#169; Copyright CLB Tin học ITE All Reserved.</p>
+    </div>
+    <div id="centerFooter">
+      <h1>Liên kết nhanh</h1>
+      <!-- cần gắn link khi có link đăg kí -->
+      <i class="fa-solid fa-pen"></i>
+      <a href="" target="_blank">Đăng kí thành viên</a> <br>
+      <i class="fa-solid fa-graduation-cap"></i>
+      <a href="https://itc.edu.vn/" target="_blank">Trang chủ chính thức trường CĐ CNTT</a>
+    </div>
+    <div id="rightFooter">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449.2714854342751!2d106.63432329819565!3d10.77510407039651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea144839ef1%3A0x798819bdcd0522b0!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIEPDtG5nIE5naOG7hyBUaMO0bmcgVGluIFRwLkjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1717337174909!5m2!1svi!2s" width="90%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </footer>
+
+
+
+      <!-- Phím cuộn -->
+  <button id="scrollToTopBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+  <script>
+      let mybutton = document.getElementById("scrollToTopBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+      mybutton.onclick = function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+  </script>
+
+
+</body>
+
+</html>

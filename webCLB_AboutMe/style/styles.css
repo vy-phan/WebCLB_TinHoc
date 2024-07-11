@@ -1,0 +1,299 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../img/dark.jpg");
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Menu */
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  /* Adjust padding for better spacing on mobile */
+  display: flex;
+  justify-content: space-between;
+  /* Maintain even spacing */
+  align-items: center;
+  z-index: 99;
+  background: rgba(83, 133, 167, 0.707);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  /* Remove for horizontal layout on mobile */
+}
+
+.menu a {
+  position: relative;
+  font-size: 1.3em;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+/*  margin-left: 40px;*/
+}
+
+.menu a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.menu #logo:hover::after {
+  transform-origin: center;
+  transform: scaleX(0);
+}
+
+/* nút bấm thanh menu khi ở dạng đt  */
+#menu-button {
+  cursor: pointer;
+  display: none;
+  text-align: right;
+}
+
+#menu-button:hover {
+  color: white;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar {
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 14px;
+  display: flex;
+  align-items: left;
+  margin-right: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #030303;
+  padding-left: 10px;
+}
+
+.search-bar input::placeholder {
+  color: #000000;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 22px;
+  color: #000000;
+}
+
+.search-bar button:hover {
+  background-color: rgba(0, 0, 0, 0);
+} 
+
+
+
+
+
+/* Main Sections */
+main {
+    padding: 20px 0;
+    background-color: white;
+    margin-top: 2px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    margin: 10px 0;
+}
+
+
+/* chia bố cục mentor */
+.mentorCLB {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.deliteMentor {
+    flex: 50%;
+    margin: 0px 20px ;
+}
+
+.deliteMentor > h1{
+    margin: 0px;
+    text-align: center;
+}
+
+.deliteMentor > img {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.deliteMentor > p {
+    margin: 0px;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1300px) {
+    main{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.menu {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .menu a,
+  .search-bar {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 2.0em;
+/*    text-indent: -80px;*/
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  main{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+#headerImg{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#headerImg>img {
+  height: auto;
+  padding: 10px;
+}
+
+#btnl {
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #DDFEFF;
+}
+#btnr {
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #DDFEFF;
+}
+
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid 1px black; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: #ee2c74;
+/*    background-color: #333; /* Set a background color */*/
+/*    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Câu lạc bộ tin học</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icon//favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../CSS/baiViet.css" />
+</head>
+
+<body>
+
+  <div class="menu">
+    <div id="menu_container">
+      <nav>
+        <a id="logo" href="" target="_self">
+          <img src="../Images/logo_itc.png" id="ITE_CLB" height="70px" width="70px" />
+        </a>
+      </nav>
+      <div id="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!-- THÀNH CHỈNH PHẦN NÀY -->
+
+      <!-- Script đóng mở menu -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        let isMenuOpen = false;
+        $('#menu-button').click(function () {
+          if (!isMenuOpen) {
+            $('.menuBtn').slideDown();
+            isMenuOpen = true;
+          } else {
+            $('.menuBtn').slideUp();
+            isMenuOpen = false;
+          }
+        })
+      </script>
+    </div>
+    <a class="menuBtn" href="../../webCLB/homePage.html" target="_self">Trang chủ</a>
+    <a class="menuBtn" href="#">Bài viết</a>
+    <a class="menuBtn" href="../../webCLB_Course/coursePage.html">Khóa học</a>
+    <a class="menuBtn" href="../../webCLb_test/HTML/DungeonCode.html" target="_blank">Test</a>
+    <a class="menuBtn" href="../../webCLB_lienHe/Giaodien/contact.html">Liên hệ</a>
+    <a class="menuBtn" href="../../webCLB_AboutMe/AboutUs.html">About Us</a>
+
+    <form action="#" class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <script>
+      $(document).ready(function () {
+        $('#menu-button').click(function () {
+          $('.menuBtn').slideToggle();
+        })
+      })
+    </script>
+  </div>
+
+
+  <div class="row">
+    
+    <div class="side">
+
+      <!-- Tiêu đề -->
+      <h2 style="text-align: center;">Bài viết nổi bật
+        <div style="width: 165px;height: 1px;background: rgb(0, 152, 209);margin: auto auto 8px;">
+        </div>
+      </h2>
+
+      <div class="contenImpresvise">
+        <a href="../HTML/bao.html">
+          <img src="../Images/bao1.jpg" width="112px" height="70px">
+          <p>𝐓𝐡𝐨̂𝐧𝐠 𝐛𝐚́𝐨 “𝐊𝐢𝐜𝐤 𝐎𝐟𝐟” 𝐜𝐮𝐨̣̂𝐜 𝐭𝐡𝐢 𝐖𝐞𝐛 𝐃𝐞𝐬𝐢𝐠𝐧 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞</p>
+        </a>
+        <hr>
+      </div>
+
+      <!-- Bài viết 2 -->
+      <h2 style="text-align: center;">Bài viết khác
+        <div style="width: 165px;height: 1px;background: rgb(0, 152, 209);margin: auto auto 8px;">
+        </div>
+      </h2>
+
+      <!-- bài báo 1  -->
+      <div class="contenImpresvise">
+        <a href="../HTML/bao.html">
+          <img src="../Images/bao1.jpg" width="112px" height="70px">
+          <p>𝑾𝒆𝒃 𝑫𝒆𝒔𝒊𝒈𝒏 𝑪𝒉𝒂𝒍𝒍𝒆𝒏𝒈𝒆 - 𝑲𝒉𝒐̛𝒊 𝒅𝒂̣̂𝒚 𝒏𝒊𝒆̂̀𝒎 đ𝒂𝒎 𝒎𝒆̂ 𝒔𝒂́𝒏𝒈 𝒕𝒂̣𝒐
+            𝒄𝒖̀𝒏𝒈 𝒈𝒊𝒂̉𝒊 𝒕𝒉𝒖̛𝒐̛̉𝒏𝒈 𝒔𝒊𝒆̂𝒖 𝒉𝒂̂́𝒑 𝒅𝒂̂̃𝒏!💻🖥️</p>
+        </a>
+        <hr>
+      </div>
+
+      <!-- bài báo 2  -->
+      <div class="contenImpresvise">
+        <a href="../HTML/bao.html">
+          <img src="../Images/SinhHoat2.jpg" width="112px" height="70px">
+          <p>Hôm nay buổi sinh hoạt T7, 25, Th5 có sự tham gia đầy đủ của các bạn thành viên trong CLB🌱</p>
+        </a>
+        <hr>
+      </div>
+
+      <!-- bài báo 3 -->
+      <div class="contenImpresvise">
+        <a href="../HTML/bao.html">
+          <img src="../Images/SinhHoat3.jpg" width="112px" height="70px">
+          <p>Buổi sinh hoạt và ôn tập ngày8/6 với sự tham nhiệt tình và đầy của các bạn thành viên câu lạc bộ🌱</p>
+        </a>
+        <hr>
+      </div>
+    </div>
+
+
+
+
+    <!-- main -->
+    <div class="main">
+      <br />
+
+      <!-- hiện thị giờ -->
+
+      <div id="currentTime"
+        style="color: black; font-size: large;font-weight: 600;text-align: right; padding-bottom: 20px;">
+
+      </div>
+      <script>
+        function startTime() {
+          var today = new Date();
+          var hour = today.getHours();
+          var minutes = today.getMinutes();
+          var seconds = today.getSeconds();
+
+          // Bổ sung số 0 trước cho phút và giây nếu là số 1 chữ số
+          minutes = minutes < 10 ? '0' + minutes : minutes;
+          seconds = seconds < 10 ? '0' + seconds : seconds;
+
+          var time = hour + ':' + minutes + ':' + seconds;
+          document.getElementById("currentTime").innerHTML = time;
+        }
+
+        // Cập nhật thời gian mỗi giây
+        setInterval(startTime, 1000);
+
+        // Khởi động hiển thị thời gian khi load trang
+        startTime();
+      </script>
+      <!-- đoạn này hết hiển thị giờ ròi nha -->
+
+
+      <!-- Bài viết chinh -->
+
+      <div class="contentMain">
+        <img src="../Images/AI.jpg" class="responsive-image">
+        <a href="./baoAI.html">
+          <h1>AI VÀ MACHINE LEARNING(MÁY HỌC) TRONG LẬP TRÌNH</h1>
+        </a>
+        <p><i class='far fa-clock'></i> TP.HCM, Sep 2, 2024</p>
+        <a href="./baoAI.html">
+          <p>
+            AI và Machine Learning đang là xu hướng phát triển mạnh mẽ trong ngành công nghệ thông tin. Với khả năng học
+            hỏi từ dữ
+            liệu và đưa ra các dự đoán, các hệ thống AI đã và đang thay đổi cách chúng ta tương tác với công nghệ...
+          </p>
+        </a>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+
+      <!-- bài báo mới thêm vào  -->
+      <div class="contentMain">
+        <img src="../Images/baoIT/cntt-3.jpg" class="responsive-image">
+        <a href="./baoIT.html">
+          <h1>NGÀNH CÔNG NGHỆ THÔNG TIN GỒM NHỮNG CHUYÊN NGÀNH NÀO ?</h1>
+        </a>
+        <p><i class='far fa-clock'></i> TP.HCM, March 25, 2024</p>
+        <a href="./baoIT.html">
+          <p>
+            Công nghệ thông tin là ngành học được ưa chuộng và cũng đang “khát” nhân lực....
+          </p>
+        </a>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+
+      <!-- bài báo mới thêm vào  -->
+      <div class="contentMain">
+        <img src="../Images/baoCaoTT/Bao-Cao-Thi-Truong-IT.png" class="responsive-image">
+        <a href="./baoCaoTT.html">
+          <h1>BÁO CÁO THỊ TRƯỜNG IT VIỆT NAM 2023</h1>
+        </a>
+        <p><i class='far fa-clock'></i> TP.HCM, Dec 24, 2023</p>
+        <a href="./baoCaoTT.html">
+          <p>
+            Báo cáo thị trường IT Việt Nam năm 2023: Điểm sáng trong phục hồi kinh tế gắn liền với chương trình đổi mới
+            sáng tạo và chuyển đổi số quốc gia...
+          </p>
+        </a>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <!-- stop -->
+
+
+
+    </div>
+  </div>
+
+
+  <footer>
+    <div id="leftFooter">
+      <h1>Liên Hệ</h1>
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Địa điểm: Tầng Trệt A Trường cao đẳng Công Nghệ Thông Tin (phía sau Phòng Tin Học và Ngoại Ngữ)
+      </p>
+      <p><i class="fa-solid fa-tags"></i>Theo dõi chúng tôi tại:</p>
+      <a href="https://www.facebook.com/profile.php?id=61559944978578" target="_blank"><i class="fa-brands fa-facebook"
+          style="color: #02258d;"></i></a>
+      <p>&#169; Copyright CLB Tin học ITE All Reserved.</p>
+    </div>
+    <div id="centerFooter">
+      <h1>Liên kết nhanh</h1>
+      <!-- cần gắn link khi có link đăg kí -->
+      <i class="fa-solid fa-pen"></i>
+      <a href="" target="_blank">Đăng kí thành viên</a> <br>
+      <i class="fa-solid fa-graduation-cap"></i>
+      <a href="https://itc.edu.vn/" target="_blank">Trang chủ chính thức trường CĐ CNTT</a>
+    </div>
+    <div id="rightFooter">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449.2714854342751!2d106.63432329819565!3d10.77510407039651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea144839ef1%3A0x798819bdcd0522b0!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIEPDtG5nIE5naOG7hyBUaMO0bmcgVGluIFRwLkjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1717337174909!5m2!1svi!2s"
+        width="90%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </footer>
+  <!-- Phím cuộn -->
+  <button id="scrollToTopBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+  <script>
+    let mybutton = document.getElementById("scrollToTopBtn");
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    mybutton.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+</body>
+
+</html>

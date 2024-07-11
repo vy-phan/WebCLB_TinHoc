@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./icon/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon//favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./style/homePage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <title>Câu lạc bộ Tin Học</title>
+</head>
+
+<body>
+  <!-- nguon comment FB  -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0" nonce="dgYkrs26"></script>
+<!-- stop -->
+  <div class="menu">
+    <div id="menu_container">
+      <nav>
+        <a id="logo" href="" target="_self">
+          <img src="./img/logo_itc.png" id="ITE_CLB" height="70px" width="70px" />
+        </a>
+      </nav>
+      <div id="menu-button">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <a class="menuBtn" href="homePage.html" target="_self">Trang chủ</a>
+    <a class="menuBtn" href="../webCLB_baiViet/HTML/baiViet.html">Bài viết</a>
+    <a class="menuBtn" href="../webCLB_Course/coursePage.html">Khóa học</a>
+    <a class="menuBtn" href="../webCLb_test/HTML/DungeonCode.html" target="_blank">Test</a>
+    <a class="menuBtn" href="../webCLB_lienHe/Giaodien/contact.html">Liên hệ</a>
+    <a class="menuBtn" href="../webCLB_AboutMe/AboutUs.html">About Us</a>
+    <form action="#" class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <script>
+      $(document).ready(function () {
+        $('#menu-button').click(function () {
+          $('.menuBtn').slideToggle();
+        })
+      })
+    </script>
+  </div>
+
+
+  <div id="container">
+    <div id="left_Side">
+      <div id="headerImg" style="max-width: 1400px;position: relative;">
+        <img class="mySlides" src="./img/banner.jpg" style="width: 100%; ">
+        <img class="mySlides" src="./img/anhteam.jpg"  style="width: 100%;">
+        <!-- <img class="mySileds" src="./img/python.png" style="width: 100%;"> -->
+
+        <a style="position: absolute;top: 45%; left: 0;" onclick="plusDivs(-1);">
+          <span id="btnl">&lt;</span>
+        </a>
+        <a style="position: absolute;top: 45%; right: 0;" onclick="plusDivs(1);">
+          <span id="btnr">&gt;</span>
+        </a>
+        <script src="./scrip/showImg.js"></script>
+      </div>
+      
+      <div id="contentIntroduction">
+        <br>
+        <h1>Giới thiệu câu lạc bộ</h1>
+        <p>
+          Câu lạc bộ Tin Học (CLB Tin Học - ITE) là một tổ chức do sinh viên thành
+          lập và điều hành, với mục tiêu tạo ra một môi trường học tập và phát
+          triển kỹ năng tin học cho các bạn trẻ đam mê công nghệ. CLB không chỉ là
+          nơi để học hỏi kiến thức mới mà còn là nơi để kết nối, chia sẻ kinh
+          nghiệm và thực hiện các dự án công nghệ sáng tạo.
+        </p>
+       <br>   
+      </div>
+      <br>
+
+      <div id="contentNewsInHomePage">
+        <br>
+        <img src="../webCLB_baiViet/Images/AI.jpg" style="width: 100%; height: auto;">
+        <a href="../webCLB_baiViet/HTML/baoAI.html">
+          <h1>AI VÀ MACHINE LEARNING(MÁY HỌC) TRONG LẬP TRÌNH
+          </h1>
+          <p>AI và Machine Learning đang là xu hướng phát triển mạnh mẽ trong ngành công nghệ thông tin. Với khả năng học hỏi từ dữ liệu và đưa ra các dự đoán, các hệ thống AI đã và đang thay đổi cách chúng ta tương tác với công nghệ...</p> <br>
+        </a>
+      </div>  
+
+      <div id="linkRegister">
+        <a href="../webCLB_lienHe/bocuc.html" target="_blank">Link đăng kí tham gia <br> câu lạc bộ Tin Học</a>
+      </div>
+
+      <!-- comment FB  -->
+      <div id="comment">
+
+        <!-- cần sửa link khi có link web chính thức -->
+        <div class="fb-comments" data-href="file:///D:/subliMent/webCLBTinHoc/webCLB/homePage.html" data-width="200" data-numposts="10"></div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
+      nonce="f5nCYyLW"></script>
+    <div id="right_Side">
+      <marquee>Chào mừng bạn đến với Website Câu Lạc Tin Học . Đây là nơi cập nhật mọi tin tức , các bài báo từ CLB tổ chức và dự án .</marquee>
+      <hr>
+      <h4>CÁC KÊNH LẬP TRÌNH HAY HO CHO NGƯỜI MỚI</h4>
+      <div id="containerYouTube">
+        <div class="courseYtb">
+          <a href="https://youtu.be/vzGllw18DkA?si=6NZFhKgkqzEN5ees" target="_blank"><img src="./img/python.png"
+              alt="python"></a>
+        </div>
+        <div class="courseYtb">
+          <a href="https://youtube.com/playlist?list=PLyxSzL3F748401hWFgJ8gKMnN6MM8QQ7F&si=C5mCGJuwfIZpEiLK"
+            target="_blank"><img src="./img/java.png" alt="java"></a>
+        </div>
+        <div class="courseYtb">
+          <a href="https://youtu.be/1ZyAioazMQg?si=f4UTEocZibim_XXl" target="_blank"><img src="./img/AI.png"
+              alt="AI"></a>
+        </div>
+        <div class="courseYtb">
+          <a href="https://youtu.be/JGoaMAx3PLg?si=G4vboxIrhNWBRI_R" target="_blank"><img src="./img/fixbug.png"
+              alt="fixbug"></a>
+        </div>
+
+        <!-- gắn link khóa học vào -->
+        <a id="continue" href="../webCLB_Course/coursePage.html">Xem tiếp ...</a>
+      </div>
+      <hr>
+      <h4>CÁC BÀI VIẾT MỚI NHẤT</h4>
+      <div class="contenImpresvise"> 
+          <a href="../webCLB_baiViet/HTML/baiViet.html">
+            <img src="./img/bao1.jpg" width="112px" height="70px"> 
+            <p>𝐓𝐡𝐨̂𝐧𝐠 𝐛𝐚́𝐨 “𝐊𝐢𝐜𝐤 𝐎𝐟𝐟” 𝐜𝐮𝐨̣̂𝐜 𝐭𝐡𝐢 𝐖𝐞𝐛 𝐃𝐞𝐬𝐢𝐠𝐧 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞</p>
+          </a>
+          
+      </div>
+
+
+      <hr>
+      <h4>ABOUT US</h4>
+
+      <!-- gắn link about us -->
+      <a href="../webCLB_AboutMe/AboutUs.html" style="color: black; text-decoration: none;">
+        <p >
+          Câu lạc bộ Tin Học (CLB Tin Học - ITE) là một tổ chức do sinh viên thành
+        lập và điều hành, với mục tiêu tạo ra một môi trường học tập và...
+        </p>
+      </a>
+      <hr>
+      <h4>TEST </h4>
+      <div id="test">
+        <a href="../webCLb_test/HTML/DungeonCode.html" target="_blank">
+          <img src="../webCLb_test/IMG/dungeon.jpg" width="80px">
+          <h3>Dungeon Code </h3>
+        </a>
+      </div>
+      <hr>
+      <div id="fanpage">
+        <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61559944978578" data-tabs="timeline"
+          data-width="300px" data-height="400px" data-small-header="false" data-adapt-container-width="true"
+          data-hide-cover="false" data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/profile.php?id=61559944978578" class="fb-xfbml-parse-ignore"><a
+              href="https://www.facebook.com/profile.php?id=61559944978578">CLB Tin Học - ITE</a></blockquote>
+        </div>
+      </div>
+      <style>
+        hr {
+          width: 100%;
+          border-top: 3px solid black;
+        }
+      </style>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div id="leftFooter">
+      <h1>Liên Hệ</h1>
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Địa điểm: Tầng Trệt A Trường cao đẳng Công Nghệ Thông Tin (phía sau Phòng Tin Học và Ngoại Ngữ)
+      </p>
+      <p><i class="fa-solid fa-tags"></i>Theo dõi chúng tôi tại:</p>
+      <a href="https://www.facebook.com/profile.php?id=61559944978578" target="_blank"><i class="fa-brands fa-facebook"
+          style="color: #02258d;"></i></a>
+      <p>&#169; Copyright CLB Tin học ITE All Reserved.</p>
+    </div>
+    <div id="centerFooter">
+      <h1>Liên kết nhanh</h1>
+      <!-- cần gắn link khi có link đăg kí -->
+      <i class="fa-solid fa-pen"></i>
+      <a href="../webCLB_lienHe/bocuc.html" target="_blank">Đăng kí thành viên</a> <br>
+      <i class="fa-solid fa-graduation-cap"></i>
+      <a href="https://itc.edu.vn/" target="_blank">Trang chủ chính thức trường CĐ CNTT</a>
+    </div>
+    <div id="rightFooter">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d449.2714854342751!2d106.63432329819565!3d10.77510407039651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea144839ef1%3A0x798819bdcd0522b0!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIEPDtG5nIE5naOG7hyBUaMO0bmcgVGluIFRwLkjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1717337174909!5m2!1svi!2s" width="90%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </footer>
+
+  <!-- Phím cuộn -->
+  <button id="scrollToTopBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+  <script>
+      let mybutton = document.getElementById("scrollToTopBtn");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+      mybutton.onclick = function() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+  </script>
+</body>
+
+</html>

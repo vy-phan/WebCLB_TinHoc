@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+/*  background-image: url("../Images/dark.jpg");*/
+  background-image: url("../Images/dark.jpg");
+}
+
+/* giao diện menu */
+
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  /* Adjust padding for better spacing on mobile */
+  display: flex;
+  justify-content: space-between;
+  /* Maintain even spacing */
+  align-items: center;
+  z-index: 99;
+  background: rgba(83, 133, 167, 0.707);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  /* Remove for horizontal layout on mobile */
+}
+
+.menu img {
+  width: 70px;
+}
+
+.menu a {
+  position: relative;
+  font-size: 1.3em;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.menu a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.menu #logo:hover::after {
+  transform-origin: center;
+  transform: scaleX(0);
+}
+
+/* nút bấm thanh menu khi ở dạng đt  */
+#menu-button {
+  cursor: pointer;
+  display: none;
+  text-align: right;
+}
+
+#menu-button:hover {
+  color: white;
+}
+
+
+.search-bar {
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #000000;
+  border-radius: 14px;
+  display: flex;
+  align-items: left;
+  margin-right: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #030303;
+  padding-left: 10px;
+}
+
+.search-bar input::placeholder {
+  color: #000000;
+}
+
+.search-bar button {
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  font-size: 22px;
+  color: #000000;
+}
+
+.search-bar button:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+/* Column container */
+.row {
+/*  display: -ms-flexbox;*/
+  /* IE10 */
+  display: flex;
+/*  -ms-flex-wrap: wrap;*/
+  /* IE10 */
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%;
+  /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 70%;
+  /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+
+.contenImpresvise > a {
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+}
+
+.contenImpresvise > a > p {
+  margin-top: 0px;
+  margin-left: 5px;
+  color: black;
+}
+
+.contenImpresvise > a > img {
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 25%;
+}
+
+.contentMain {
+  display: flex; /* Enable flexbox layout for the container */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: left; /* Center items horizontally */
+  width: 100%; /* Make the container span the full width */
+}
+
+.contentMain > a {
+  text-decoration: none;
+  color: black;
+}
+
+.responsive-image {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: auto; /* Automatically adjust the height based on the width */
+}
+
+/* cuối trang  */
+footer{
+  display: flex;
+  flex-wrap: nonwrap;
+  color: white;
+  background: rgb(83, 123, 200);
+  background: linear-gradient(90deg, rgba(83, 123, 200, 1) 25%, rgba(119, 183, 198, 1) 83%, rgba(195, 251, 255, 1) 100%);
+
+}
+
+footer>#leftFooter {
+  flex: 33%;
+  font-size: large;
+  padding: 30px;
+
+}
+
+footer>#centerFooter{
+  flex: 33%;
+  padding: 30px;
+  font-size: large;
+}
+
+footer>#rightFooter {
+  flex: 33%;
+  font-size: large;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+#centerFooter > a{
+  color: white;
+  text-decoration: none;
+}
+
+#centerFooter>a:hover{
+  color: black;
+}
+
+@media screen and (max-width: 1264px) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .menu a,
+  .search-bar {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 2.0em;
+    text-indent: -80px;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .search-bar {
+    flex-direction: row;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  .side{
+    display: none;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer>#leftFooter {
+    flex: 50%;
+
+  }
+  
+  footer>#centerFooter{
+    flex: 50%;
+
+  }
+
+  footer>#rightFooter{
+    flex: 100%;
+    padding: 10px;
+  }
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid 1px black; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: #ee2c74;
+/*    background-color: #333; /* Set a background color */*/
+/*    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
