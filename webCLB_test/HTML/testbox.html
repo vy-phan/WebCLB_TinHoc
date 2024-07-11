@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/box.css">
+    <title>Dungeon Code</title>
+    <link rel="shortcut icon" type="image/png" href="../IMG/logo_icon.png" />
+</head>
+<header>
+        <div align="center">
+            <a href="DungeonCode.html" target="_self">Trang chủ</a>
+            <a href="" target="_self">Cá nhân</a>
+            <a href="" target="_self">Xếp hạng</a>
+            <a href="" target="_self">Hướng dẫn</a>
+        </div>
+</header>
+
+<body>
+
+
+
+
+
+    <button type="button" onclick="addButtons()">Add code</button>
+    <button type="button" onclick="reset_run(1)">Run code</button>
+    <button type="button" onclick="formatbox()">Format code</button>
+    <button type="button" onclick="removeBox()">Delete code</button>
+
+
+
+
+
+    <div id="buttonContainer" style="display: none;">
+        <button type="button" onclick="codeadd(1)">Đi thẳng</button>
+        <button type="button" onclick="codeadd(2)">Quay trái</button>
+        <button type="button" onclick="codeadd(3)">Quay phải</button>
+        <button type="button" onclick="codeadd(4)">Vòng lặp</button>
+        <!-- <button type="button" onclick="codeadd(5)">End.</button> -->
+
+    </div>
+
+    <div id="view_out">
+        <table>
+            <img id="chest" src="../IMG/ruong.png">
+
+
+            <img id="art" src="../IMG/main2.png">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div>
+        <script src="../JS/boxmove.js"></script>
+    </div>
+
+
+
+    <script>
+        function addButtons() {
+            var buttonContainer = document.getElementById('buttonContainer');
+            var display = buttonContainer.style.display;
+            if (display === 'none') {
+                buttonContainer.style.display = 'block';
+            } else {
+                buttonContainer.style.display = 'none';
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>

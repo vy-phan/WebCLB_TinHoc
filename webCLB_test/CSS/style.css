@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* giao diện menu */
+
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px 20px; /* Adjust padding for better spacing on mobile */
+  align-items: left;
+  z-index: 99;
+  background: rgba(100, 146, 177, 0.707);
+  backdrop-filter: blur(5px);
+  text-align: left; /* Remove for horizontal layout on mobile */
+}
+
+
+
+.menu a {
+  position: relative;
+  font-size: 1.3em;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.menu a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* nút bấm thanh menu khi ở dạng đt  */
+#menu-button{
+  display: flex;
+  cursor: pointer;
+  text-align: right;
+}
+#menu-button:hover{
+  color: white;
+}
+
+#programStartBox {
+  width: 200px;
+  height: 50px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* giao diện chính hiện nội dung */
+#left_Side{
+    flex: 70%;
+    padding: 20px;
+    background-color: #cfffe0;
+
+}
+
+
+#container {
+	display: flex;
+	flex-wrap: nonwrap;
+}
+
+
+
+#left_Side > img {
+  width: 100%;
+  height: auto;
+
+}
+
+#contentIntroduction{
+  background-color: rgb(160, 161, 159);
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: -20px;
+  height: 800px;
+}
+
+
+
+
+
+
+
+/* Responsive Menu Items (Mobile) */
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column; 
+    align-items: flex-start; 
+    
+  }
+  .menu a,
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #left_Side{
+    flex: 100%;
+  }
+  #right_Side{
+    flex: 100%;
+    display: none;
+  }
+}
+
+/* cuối trang  */
+/* footer{
+    
+} */
